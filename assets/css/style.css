@@ -5690,12 +5690,16 @@ ul {
   height: 100%;
   z-index: 99999999;
   background: #fff;
+
+  display: flex;
+  /* الجديد */
+  justify-content: center;
+  /* تحديد المنتصف افقياً */
+  align-items: center;
+  /* تحديد المنتصف رأسياً */
 }
 
 .loader .pre-load {
-  position: absolute;
-  top: calc(50% - 32px);
-  left: calc(50% - 32px);
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -5729,6 +5733,13 @@ ul {
   bottom: 0%;
   animation: rotate-three 1s linear infinite;
   border-top: 10px solid #bf1c23;
+}
+
+@media (max-width: 480px) {
+  .loader .pre-load {
+    width: 65px;
+    height: 65px;
+  }
 }
 
 @keyframes rotate-one {
