@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-class-completion",
+  "displayName": "Bootstrap / Project CSS Class Completion",
+  "description": "Provides completion suggestions for CSS class names (parses project CSS like Bootstrap) inside HTML class attributes.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "main": "extension.js",
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "contributes": {},
+  "scripts": {},
+  "categories": [
+    "Other"
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}
