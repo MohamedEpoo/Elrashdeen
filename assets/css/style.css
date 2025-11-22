@@ -5735,6 +5735,19 @@ ul {
   border-top: 10px solid #bf1c23;
 }
 
+.loader .pre-load .inner {
+  border: 10px solid transparent;
+  border-top-color: #bf1c23;
+}
+
+.loader .pre-load {
+  margin: 0;
+}
+
+.loader {
+  padding: 0 !important;
+}
+
 @media (max-width: 480px) {
   .loader .pre-load {
     width: 65px;
