@@ -33,6 +33,7 @@ This files table contents are outlined below>>>>>
 ** - Go Top CSS
 ** - Preloader CSS
 */
+
 @import url("../../../../css2");
 @import url("../../../../css2-1");
 
@@ -42,6 +43,7 @@ body {
   color: #444444;
   background-color: #fff;
   font-size: 16px;
+
 }
 
 h1,
@@ -5747,7 +5749,14 @@ ul {
 .loader {
   padding: 0 !important;
 }
-
+.loader .d-table,
+.loader .d-table-cell {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
 @media (max-width: 480px) {
   .loader .pre-load {
     width: 65px;
