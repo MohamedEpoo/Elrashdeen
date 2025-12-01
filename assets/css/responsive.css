@@ -665,26 +665,41 @@
     font-size: 38px;
   }
 
-  .coming-soon-area .soon-item span {
-    font-size: 16px;
-  }
+    /* Logo responsive sizing */
+    @media (max-width: 1025px) {
+      img.logo-one.w-25 {
+        width: 90% !important;
+      }
+    }
 
-  .coming-soon-area .soon-item span:before {
-    top: 12px;
-  }
+    .logo img {
+      width: 70px !important;
+      margin-bottom: 20px !important;
+    }
 
-  .coming-soon-area .soon-item span:after {
-    top: 12px;
-  }
+    /* Ensure navbar items stack vertically on mobile */
+    @media (max-width: 991px) {
+      .navbar-nav .nav-item {
+        display: block !important;
+        margin-bottom: 8px;
+      }
+  
+      .navbar-nav .nav-link {
+        white-space: normal;
+        padding: 8px 0;
+      }
+    }
 
-  .team-details-area .details-content .details-info li span {
-    font-size: 13px;
-  }
-
-  .team-details-area .details-content .details-info li a {
-    font-size: 13px;
-  }
-
+    /* Navbar items inline on desktop */
+    @media (min-width: 992px) {
+      .navbar-nav .nav-item {
+        display: inline-block !important;
+      }
+  
+      .navbar-nav .nav-link {
+        white-space: nowrap !important;
+      }
+    }
   .user-form-area .user-form-item {
     padding: 30px 15px 30px;
   }
@@ -1517,20 +1532,36 @@
   width: 90% !important;
   }
 }
+
 .logo img {
   width: 70px !important;
   margin-bottom: 20px !important;
 }
-/* خلى عناصر القائمة في صف واحد */
- 
 
-/* تعديل الـ li */
-.navbar-nav .nav-item {
-    display: inline-block !important;
- }
-
-/* تعديل اللينكات */
-.navbar-nav .nav-link {
-    white-space: nowrap !important; /* يمنع نزول الكلمة لسطر تاني */
+/* Keep navbar items inline on all viewports. On narrow screens allow horizontal scroll
+   to prevent wrapping and preserve the inline layout requested. */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 12px;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  height: auto; /* override fixed height from earlier */
 }
+
+.navbar-nav .nav-item {
+  display: inline-block !important;
+  margin-bottom: 0 !important;
+}
+
+.navbar-nav .nav-link {
+  white-space: nowrap !important; /* prevent breaking to next line */
+  padding: 8px 12px !important;
+}
+
+/* Optional: hide vertical scrollbar on some platforms while still allowing scroll */
+.navbar-nav::-webkit-scrollbar { height: 6px; }
+.navbar-nav::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
  
