@@ -348,14 +348,16 @@ ul {
   border-right: 470px solid transparent;
   z-index: -1;
 }
+
 @media (max-width: 480px) {
   .about-area .about-img img {
-max-width: 50%;
+    max-width: 50%;
   }
 }
+
 @media (max-width: 680px) {
   .about-area .about-img img {
-max-width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -5327,7 +5329,7 @@ nav ul li a {
 
 /*----- Team CSS -----*/
 .title-bg-six {
-  background-image: url("../img/title/title-bg6.jpg");
+  background-image: url("../img/unnamed.jpg");
 }
 
 /*----- Team Details CSS -----*/
@@ -5912,3 +5914,32 @@ nav ul li a {
 }
 
 /*# sourceMappingURL=style.css.map */
+a.common-btn.justify-content-center {
+  border-radius: 10%;
+  position: relative;
+  /* يمكن أن يبقى relative */
+  display: block;
+  /* **تغيير مهم: يجب أن يكون العنصر block أو flex ليعمل margin: auto** */
+  text-align: center !important;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(1 34 77);
+  color: #fff;
+  transition: 0.5s all ease;
+  opacity: 1;
+  font-weight: 600;
+  padding: 12px 25px;
+
+  /* **التعديلات لجعل الزر في المنتصف:** */
+  width: fit-content;
+
+  margin: 0 auto 30px auto;
+
+
+}
+
+section.team-area.ptb-100 {
+
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
