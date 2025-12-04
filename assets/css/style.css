@@ -540,7 +540,7 @@ ul {
 }
 
 .main-nav nav .navbar-brand {
-  margin-right: 0;
+  margin-right: 0%;
 }
 
 .main-nav nav .navbar-nav {
@@ -4192,6 +4192,7 @@ nav ul li a {
 
 .founder-area .founder-img img {
   width: 100%;
+  margin-right: 50%;
 }
 
 .team-area.four .section-title {
@@ -5914,32 +5915,24 @@ nav ul li a {
 }
 
 /*# sourceMappingURL=style.css.map */
-a.common-btn.justify-content-center {
-  border-radius: 10%;
-  position: relative;
-  /* يمكن أن يبقى relative */
-  display: block;
-  /* **تغيير مهم: يجب أن يكون العنصر block أو flex ليعمل margin: auto** */
-  text-align: center !important;
-  overflow: hidden;
-  z-index: 1;
-  background-color: rgb(1 34 77);
-  color: #fff;
-  transition: 0.5s all ease;
-  opacity: 1;
-  font-weight: 600;
-  padding: 12px 25px;
+ 
 
-  /* **التعديلات لجعل الزر في المنتصف:** */
-  width: fit-content;
-
-  margin: 0 auto 30px auto;
-
-
+ /* التنسيق الأساسي للزر */
+.submit-button {
+    padding: 15px 20px;
+    width: 100%;
+    background: #bf1c23; /* لون الخلفية الأحمر المطلوب */
+    color: #fff; /* لون النص الأبيض في الحالة العادية */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.9s, color 0.9s; /* لتنعيم الانتقال */
 }
 
-section.team-area.ptb-100 {
-
-  padding-top: 60px;
-  padding-bottom: 100px;
+/* تأثير التمرير (Hover) */
+.submit-button:hover {
+    background: rgb(1 32 77); /* ظل أغمق قليلاً للون الخلفية لتحسين التفاعل */
+    color: white ; /* لون النص المطلوب عند التمرير (أزرق) */
 }
+ 
